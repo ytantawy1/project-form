@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container,
+section {
+    padding: 1rem;
+}
+
+h2, h4, legend {
+    color: #dc413e;;
+    font-size: 3.75rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+legend {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Header & Navigation */
+
+header {
+    background-color: #000;
+    position: sticky;
+    top: -5.55rem;
+}
+
+svg {
+    fill: #fff;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    line-height: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    display: block;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+label {
+    display: block;
+    font-size: 1.875rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+input[type="checkbox"] ~ label {
+    display: inline;
+    font-size: 1rem;
+    margin-bottom: unset;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #e8e8e8;
+    padding: 0.5rem;
+}
+
+textarea {
+    min-height: 19rem;
+    resize: vertical;
+}
+
+.help {
+    font-size: 0.8em;
+    margin: 0.5rem 0;
+}
+
+input[type="submit"] {
+    background-color: #dc413e;
+    border: none;
+    box-shadow: 0 5px 0 #a62624;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    transition: 0.4s all ease;
+    width: 14rem;
+}
+
+
+input[type="submit"]:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+form > div:last-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+input:valid:not([type="submit"]) {
+    background-image: url('../img/check-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: 95%;
+}
+
+input:invalid {
+    background-image: url('../img/attention-circle-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: 95%;
+}
+
+@media screen and (min-width: 1200px) {
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    fieldset div {
+        flex: 0 1 48%;
+    }
+
+    .inner-container,
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
